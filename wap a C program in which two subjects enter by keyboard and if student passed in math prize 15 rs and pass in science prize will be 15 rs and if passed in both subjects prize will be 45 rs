@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int subject;
+    
+    printf("list of subject given below\n");
+    
+    printf("1. science only\n  2. Math only\n  3. both subjects\n");
+    
+    printf("choose 1 options above");
+    scanf("%d", & subject);
+    
+    if(subject==1)
+    {
+        printf("your prize  15 rs");
+    }
+    else if(subject==2)
+    {
+        printf("your prize 15 rs");
+    }
+    else if(subject==3)
+    printf("your prize 45 rs");
+}
