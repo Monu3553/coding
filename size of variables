@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int integertype;
+    float floattype;
+    char chartype;
+    double doubletype;
+    
+    printf("the size of int is %ld\n", sizeof(integertype));
+    printf("the size of float is %ld\n", sizeof(floattype));
+    printf("the size of char is %ld\n", sizeof(chartype));
+    printf("the size of double is %ld\n", sizeof(doubletype));
+
+    return 0;
+}
