@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num,sum,square,digit;
+    printf("Enter a number");
+    scanf("%d",&num);
+    
+    square=num*num;
+    while(square!=0)
+    {
+    digit=square%10;
+    sum=sum+digit;
+    square=square/10;
+    }
+    if(sum==num)
+    {
+        printf("Neon number");
+    }
+    else
+    {
+    printf("Not neon number");
+}
+    return 0;
+}
