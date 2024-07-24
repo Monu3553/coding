@@ -2,22 +2,24 @@
 #include <stdio.h>
 
 int main() {
-    int i, t1,t2,num,nextterm;
-    printf("Enter a number\n");
+    int i,num,term1,term2,nextterm,sum=0;
+    printf("Enter a number: ");
     scanf("%d",&num);
     
-    t1=0;
-    t2=1;
-    printf("first 2 terms %d %d \n",t1,t2);
+    term1=0;
+    term2=1;
     
-    nextterm=t1+t2;
+   nextterm=term1+term2;
+    printf("fibonacci series: %d  %d  ",term1,term2);
+    
     for(i=3;i<=num;i++)
     {
-        printf("%d\n", nextterm);
-        t1=t2;
-        t2=nextterm;
-        nextterm=t1+t2;
+        printf("%d  ",nextterm);
+        term1=term2;
+        term2=nextterm;
+        nextterm=term1+term2;
     }
+    
 
     return 0;
 }
