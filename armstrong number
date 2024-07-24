@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num,remainder,temp,p=0;
+    printf("Enter a number");
+    scanf("%d",&num);
+    
+    temp=num;
+    while(num>0)
+    {
+        remainder=num%10;
+        p=p+(remainder*remainder*remainder);
+        num=num/10;
+        
+    }
+    if(temp==p)
+    {
+        printf("Armstrong number");
+    }
+else 
+printf("Not armstrong number");
+    return 0;
+}
