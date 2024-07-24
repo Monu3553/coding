@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n1,n2,temp,num,i;
+    printf("Enter 2 number");
+    scanf("%d %d",&n1, &n2);
+    
+   
+    for(i=n1+1;i<=n2;i++)
+    {
+         temp=i;
+         num=0;
+         while(temp!=0)
+         {
+        remainder=temp%10;
+        num=num+(remainder*remainder*remainder);
+        temp=temp/10;
+         }
+    
+    if(i==num)
+        printf("%d   ",i);
+}
+
+    return 0;
+}
