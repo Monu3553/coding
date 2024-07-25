@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int primenum(int num)
+{
+     int flag=1;
+    for(int i=2;i<=num/2;i++)
+    {
+        if(num%i==0)
+        {
+        flag=0;
+        break;
+        }
+    }
+    if(flag)
+    {
+        printf("prime number ",num);
+    }
+    else
+    {
+    printf("not prime number ",num);
+}
+    return 0;
+}
+
+int main() {
+    int num,k=0;
+    printf("Enter a number");
+    scanf("%d",&num);
+    k=primenum(num);
+}
+   
