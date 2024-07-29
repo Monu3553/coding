@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a[5]={4,3,7,5,9};
+    int n=5,i;
+    int b[n];
+    for(i=0;i<n;i++){
+    b[i]=a[i];
+    }
+    printf(" first array  is : ");
+    for(i=0;i<n;i++)
+    {
+        printf("%d  ",a[i]);
+    }
+    printf(" \nsecond array is:");
+    for(i=0;i<n;i++)
+    {
+        printf("%d  ",b[i]);
+    }
+    
+
+    return 0;
+}
