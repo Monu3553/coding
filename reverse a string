@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int rev(char *str)
+{
+    if(*str)
+    {
+        rev(str+1);
+        printf("%c",*str);
+    }
+}
+int main() {
+    char a[]="geeks for geeks";
+    rev(a);
+
+    return 0;
+}
