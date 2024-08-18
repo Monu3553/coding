@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int decimaltobinary(int n)
+{
+    int binary[1000];
+    int i=0;
+    while(n>0)
+    {
+        binary[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    for(int j=i-1;j>=0;j--)
+    printf("%d",binary[j]);
+    
+}
+int main() {
+    int n=17;
+    decimaltobinary(n);
+
+    return 0;
+}
