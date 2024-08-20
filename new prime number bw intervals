@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdbool.h>
+int prime(int N)
+{
+    int M;
+    for(int i=2;i<=N/2;i++)
+    {
+    if(N%i==0)
+    return false;
+    }
+   return true;
+    
+
+}
+int main() {
+           int N,M;
+           int i;
+           printf("Enter prime number bw 2 interval");
+           scanf("%d %d",&M,&N);
+           for(i=M;i<=N;i++)
+          
+           if(prime(i))
+           printf("%d ",i);
+           
+    return 0;
+}
