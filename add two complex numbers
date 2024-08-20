@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct complex
+{
+   int real, img;
+};
+
+int main()
+{
+   struct complex a, b, c;
+   a.real=2;
+   a.img=3;
+   b.real=4;
+   b.img=5;
+   
+   c.real = a.real + b.real;
+   c.img = a.img + b.img;
+
+   printf("Sum of the complex numbers: %d + %di\n", c.real, c.img);
+
+   return 0;
+}
