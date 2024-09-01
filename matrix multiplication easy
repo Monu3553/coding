@@ -1,0 +1,38 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#define N 3
+
+int main()
+{
+
+
+     int A[N][N] = { { 1, 1 },
+                    { 2, 2}};
+
+    int B[N][N] = { { 1,1,1 },
+                    { 2,2,2}};
+    int C[N][N];
+    int i,j,k,sum;
+       for(i=0;i<N;i++)
+    {
+        for(j=0;j<N;j++)
+        {
+            sum=0;
+            for(k=0;k<N;k++)
+            {
+                sum=sum+A[i][k]*B[k][j];
+            }
+            C[i][j]=sum;
+        }
+    }
+    for(i=0;i<N;i++)
+    {
+        for(j=0;j<N;j++)
+        {
+            printf("%d\t",C[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
